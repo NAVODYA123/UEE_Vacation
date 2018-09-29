@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import StarRatingComponent from 'react-star-rating-component';
 
 class StarRating extends React.Component {

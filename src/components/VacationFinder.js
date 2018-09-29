@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.css';
 import { Card, CardHeader, CardBody,CardTitle, CardSubtitle,CardImg, CardText, Row, Col } from "reactstrap";
 import { Button, Form, FormGroup, Label, Radio,Table,Jumbotron } from "reactstrap";
 import{InputGroup, InputGroupAddon, InputGroupText, Input } from "reactstrap";

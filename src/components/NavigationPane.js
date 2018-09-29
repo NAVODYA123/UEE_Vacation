@@ -4,6 +4,7 @@ import { Button, Form, FormGroup, Label, Radio,Table,Jumbotron } from "reactstra
 import{TabContent, TabPane, Nav, NavItem, NavLink} from "reactstrap";
 import{InputGroup, InputGroupAddon, InputGroupText, Input } from "reactstrap";
 import{Container } from "reactstrap";
+import 'bootstrap/dist/css/bootstrap.css';
 import classnames from 'classnames';
 
 

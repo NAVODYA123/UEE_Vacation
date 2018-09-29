@@ -8,6 +8,7 @@ import CustomFilter from "./CustomFilter";
 import 'bootstrap/dist/css/bootstrap.css';
 import NavigationPane from "./NavigationPane";
 import {Table} from "reactstrap";
+import 'bootstrap/dist/css/bootstrap.css';
 class AppContainer extends Component {
 
     render() {
