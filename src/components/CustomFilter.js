@@ -3,6 +3,7 @@ import { Card, CardHeader, CardBody,CardTitle, CardSubtitle,CardImg, CardText, R
 import { Button, Form, FormGroup, Label, Radio,Table,Jumbotron } from "reactstrap";
 import{InputGroup, InputGroupAddon, InputGroupText, Input } from "reactstrap";
 import{Container } from "reactstrap";
+import StarRating from "./StarRating";
 
 class CustomFilter extends React.Component {
 
@@ -12,55 +13,46 @@ class CustomFilter extends React.Component {
                 <Container>
                     <Row>
                         <Col >
-
                             <Card>
-                                <CardHeader tag="h4">VacationFinder</CardHeader>
+                                <CardHeader tag="h4">Custom Filter</CardHeader>
                                 <CardBody>
-                                    <Form><FormGroup>
-                                        <Label for="arrivaldate">Arrival Date</Label>
-                                        <InputGroup>
-                                            <Input type="text"></Input>
-                                            <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                        </InputGroup>
-                                    </FormGroup>
-
-                                        <FormGroup>
-                                            <Label for="departuedate">Departure Date</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                        </FormGroup>
-                                        <FormGroup inline>
-                                            <Label for="arrivaldate">Vacation period</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                            <Label for="Days">Days</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                            <Label for="Days">Months</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                            <Label for="Days">Destination</Label>
-                                            <Input type="select"></Input>
-
-                                        </FormGroup>
-
-
-                                    </Form>
+                                    <Form>
+                                        <Table borderless>
+                                            <tr><td><Label for="cPrice">Compare by Price</Label></td>
+                                                <td><Input type="checkbox" class="form-control"></Input></td>
+                                            </tr>
+                                            <tr><Label for="kids">Enter Budget range</Label></tr>
+                                        </Table>
+                                            <Table>
+                                            <tr>
+                                                <td> <Label for="adults">Min</Label></td>
+                                                <td> <InputGroup>
+                                                    <InputGroupAddon addonType="prepend">
+                                                        <InputGroupText>$</InputGroupText>
+                                                        <Input type="number" class="form-control"></Input>
+                                                    </InputGroupAddon>
+                                                </InputGroup></td>
+                                                <td> <Label for="kids">Max</Label></td>
+                                                <td> <InputGroup>
+                                                    <InputGroupAddon addonType="prepend">
+                                                        <InputGroupText>$</InputGroupText>
+                                                        <Input type="number" class="form-control"></Input>
+                                                    </InputGroupAddon>
+                                                </InputGroup></td>
+                                            </tr>
+                                            </Table>
+                                        <Table>
+                                            <tr><td><Label for="cRating">Compare by Rating</Label></td>
+                                                <td><Input type="checkbox" class="form-control"></Input></td>
+                                            </tr>
+                                        </Table>
+                                        <div><StarRating/></div>
+                                        <Button outline color="danger">Search</Button>
+                                       </Form>
                                 </CardBody>
                             </Card>
-
                         </Col>
-
                     </Row>
-
                 </Container>
             </div>
         );

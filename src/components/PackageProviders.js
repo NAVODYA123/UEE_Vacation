@@ -11,56 +11,43 @@ class PackageProviders extends React.Component {
             <div>
                 <Container>
                     <Row>
-                        <Col  >
-
+                        <Col>
                             <Card>
-                                <CardHeader tag="h4">VacationFinder</CardHeader>
+                                <CardHeader tag="h4">Package Providers</CardHeader>
                                 <CardBody>
-                                    <Form><FormGroup>
-                                        <Label for="arrivaldate">Arrival Date</Label>
-                                        <InputGroup>
-                                            <Input type="text"></Input>
-                                            <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                        </InputGroup>
-                                    </FormGroup>
-
-                                        <FormGroup>
-                                            <Label for="departuedate">Departure Date</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                        </FormGroup>
-                                        <FormGroup inline>
-                                            <Label for="arrivaldate">Vacation period</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                            <Label for="Days">Days</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                            <Label for="Days">Months</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                            <Label for="Days">Destination</Label>
-                                            <Input type="select"></Input>
-
-                                        </FormGroup>
-
-
+                                    <Form>
+                                        <Table borderless>
+                                            <tr>
+                                                <td> <Label for="adults">Hotwire</Label></td>
+                                                <td><Input type="checkbox" class="form-control"></Input></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <Label for="kids">Expedia</Label></td>
+                                                <td><Input type="checkbox" class="form-control"></Input></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <Label for="kids">Trip Advisor</Label></td>
+                                                <td><Input type="checkbox" class="form-control"></Input></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <Label for="kids">Kayak</Label></td>
+                                                <td><Input type="checkbox" class="form-control"></Input></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <Label for="kids">Travelocity</Label></td>
+                                                <td><Input type="checkbox" class="form-control"></Input></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <Label for="kids">Priceline.com</Label></td>
+                                                <td><Input type="checkbox" class="form-control"></Input></td>
+                                            </tr>
+                                        </Table>
+                                        <Button outline color="danger">Compare and Search for packages</Button>
                                     </Form>
                                 </CardBody>
                             </Card>
-
                         </Col>
-
                     </Row>
-
                 </Container>
             </div>
         );

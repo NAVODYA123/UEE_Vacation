@@ -14,44 +14,67 @@ class Members extends React.Component {
                         <Col>
 
                             <Card>
-                                <CardHeader tag="h4">VacationFinder</CardHeader>
+                                <CardHeader tag="h4">Members</CardHeader>
                                 <CardBody>
-                                    <Form><FormGroup>
-                                        <Label for="arrivaldate">Arrival Date</Label>
-                                        <InputGroup>
-                                            <Input type="date">Arrival Date</Input>
-                                            <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                        </InputGroup>
-                                    </FormGroup>
-                                        <FormGroup>
-                                            <Label for="pin"></Label>
-                                            <InputGroup>
-                                                <Input type="date" name="date" id="date" placeholder="" />
-                                                <InputGroupAddon addonType="append"></InputGroupAddon>
-                                            </InputGroup>
-                                        </FormGroup>
-                                        <FormGroup inline>
-                                            <Label for="arrivaldate">Vacation period</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                            <Label for="Days">Days</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                            <Label for="Days">Months</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                            <Label for="Days">Destination</Label>
-                                            <Input type="select"></Input>
+                                    <Form>
 
+                                    <FormGroup>
+
+                                        <FormGroup check>
+                                            <Label check>
+                                                <Input type="radio" name="radio1" />{' '}
+                                            One person
+                                            </Label>
+                                        </FormGroup>
+                                        <FormGroup check>
+                                            <Label check>
+                                                <Input type="radio" name="radio1" />{' '}
+                                            Two people
+                                            </Label>
+                                        </FormGroup>
+                                        <FormGroup check>
+                                            <Label check>
+                                                <Input type="radio" name="radio1" />{' '}
+                                                Family
+                                            </Label>
                                         </FormGroup>
 
+                                        <Table borderless>
+                                            <tr>
+                                                <td> <Label for="adults">Adults</Label></td>
+                                                <td><Input type="number" class="form-control"></Input></td>
+                                                <td> <Label for="kids">Kids</Label></td>
+                                                <td><Input type="number" class="form-control"></Input></td>
+                                            </tr>
+                                        </Table>
 
+
+                                           <Table borderless>
+                                               <tr>
+                                                   <td> <Label for="adults">Have Kids Under 3 years</Label></td>
+                                                   <td><Input type="checkbox" class="form-control"></Input></td>
+                                                   <td><Input type="number" class="form-control"></Input></td>
+                                               </tr>
+                                               <tr>
+                                                   <td> <Label for="kids">Have Kids aged 3-12 yrs</Label></td>
+                                                   <td><Input type="checkbox" class="form-control"></Input></td>
+                                                   <td><Input type="number" class="form-control"></Input></td>
+                                               </tr>
+                                           </Table>
+                                        <FormGroup check>
+                                            <Label check>
+                                                <Input type="radio" name="radio1" />{' '}
+                                                Group
+                                            </Label>
+                                        </FormGroup>
+                                     </FormGroup>
+                                        <Table borderless>
+                                            <tr>
+                                                <td> <Label for="adults">Number of adults</Label></td>
+                                                <td><Input type="number" class="form-control"></Input></td>
+                                            </tr>
+                                        </Table>
+                                        <Button outline color="danger">Save Details</Button>
                                     </Form>
                                 </CardBody>
                             </Card>

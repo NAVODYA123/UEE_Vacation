@@ -3,6 +3,7 @@ import { Card, CardHeader, CardBody,CardTitle, CardSubtitle,CardImg, CardText, R
 import { Button, Form, FormGroup, Label, Radio,Table,Jumbotron } from "reactstrap";
 import{InputGroup, InputGroupAddon, InputGroupText, Input } from "reactstrap";
 import{Container } from "reactstrap";
+import Members from "./Members";
 
 class VacationFinder extends React.Component {
 
@@ -10,56 +11,57 @@ class VacationFinder extends React.Component {
         return (
             <div>
                 <Container>
+
                    <Row>
                         <Col >
 
                             <Card>
                                 <CardHeader tag="h4">VacationFinder</CardHeader>
                                 <CardBody>
-                                    <Form><FormGroup>
-                                        <Label for="arrivaldate">Arrival Date</Label>
-                                        <InputGroup>
-                                            <Input type="date">Arrival Date</Input>
-                                            <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                        </InputGroup>
-                                    </FormGroup>
+                                    <Form>
+
+
+                                   <FormGroup>
+
+                                       <Table>
+                                           <tr>
+                                               <td> <Label for="arrivaldate">Arrival Date</Label></td>
+                                               <td> <Input type="date"></Input></td>
+                                           </tr>
+                                           <tr>
+                                               <td><Label for="deaparturedate">Departure Date</Label></td>
+                                               <td> <Input type="date"></Input></td>
+                                           </tr>
+                                       </Table>
+                                   </FormGroup>
+
+                                    <Table borderless>
+                                        <tr>
+                                        <td> <Label>Vacation period</Label></td>
+                                            <td><Input type="number" class="form-control"></Input></td>
+                                            <td> <Label for="Days">Days</Label></td>
+                                            <td><Input type="number" class="form-control"></Input></td>
+                                            <td> <Label for="Months">Months</Label></td>
+                                    </tr>
+                                    </Table>
 
                                         <FormGroup>
-                                            <Label for="deaparturedate">Departure Date</Label>
-                                            <InputGroup>
-                                                <Input type="date">Departure Date</Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                        </FormGroup>
-                                        <FormGroup inline>
-                                            <Label for="arrivaldate">Vacation period</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                            <Label for="Days">Days</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                            <Label for="Days">Months</Label>
-                                            <InputGroup>
-                                                <Input type="text"></Input>
-                                                <InputGroupAddon addonType="append"><InputGroupText>To the Right!</InputGroupText></InputGroupAddon>
-                                            </InputGroup>
-                                            <Label for="Days">Destination</Label>
-                                            <Input type="select"></Input>
-
-                                        </FormGroup>
 
 
+                                            <Table>
+                                                <tr>
+                                                    <td> <Label for="Days">Destination</Label></td>
+                                                    <td> <Input type="select"></Input></td>
+                                                </tr>
+                                            </Table>
+                                           </FormGroup>
+                                    <Button outline color="danger">Save Details</Button>
                                     </Form>
                                 </CardBody>
                             </Card>
-
                         </Col>
+                   </Row>
 
-                    </Row>
 
                 </Container>
             </div>
