@@ -14,18 +14,27 @@ class AppContainer extends Component {
     render() {
         return (
             <div>
-                <Table borderless>
-                    <tr>
-                        <td> <VacationFinder/></td>
-                        <td> <PackageProviders/></td>
-                    </tr>
-                    <tr>
-                        <td> <Members/></td>
-                        <td> <CustomFilter/></td>
-                    </tr>
-                </Table>
+                <div className="row">
+                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <VacationFinder/>
+                    <div className="row"><br/></div>
+                        <Members/>
+                    <div className="row"><br/></div>
+                </div>
+                    <div className="row"><br/></div>
+                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <PackageProviders/>
+                <div className="row"><br/></div>
+                    <CustomFilter/>
+                </div>
+                </div>
+                <div className="row"><br/></div>
                 <Container>
+                    <div className="row">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <NavigationPane/>
+                        </div>
+                    </div>
                 </Container>
             </div>
         );
